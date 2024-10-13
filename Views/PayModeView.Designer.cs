@@ -68,7 +68,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1076, 105);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // pictureBox1
             // 
@@ -158,6 +157,7 @@
             // 
             // DgPayMode
             // 
+            DgPayMode.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(8, 109);
             DgPayMode.Name = "DgPayMode";

@@ -81,12 +81,26 @@ namespace Supermarket_mvp.Views
 
         public void SetPayModeListBildingSource(BindingSource payModelList)
         {
-           DgPayMode.DataSource = payModelList;
+            DgPayMode.DataSource = payModelList;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        private static PayModeView instance;
 
+        public static PayModeView GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
         }
     }
 }

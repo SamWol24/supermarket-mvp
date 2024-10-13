@@ -49,7 +49,7 @@ namespace Supermarket_mvp._Repositories
                         payModeModel.Id = (int)reader["Pay_Mode_Id"];
                         payModeModel.Name = reader["Pay_Mode_Name"].ToString();
                         payModeModel.Observation = reader["Pay_Mode_Observation"].ToString();
-                        payModeModel.Add(payModeModel);
+                        payModeList.Add(payModeModel);
                     }
 
                 }

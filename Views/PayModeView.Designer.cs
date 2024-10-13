@@ -135,6 +135,7 @@
             tabPagePayModeDetail.Padding = new Padding(3);
             tabPagePayModeDetail.Size = new Size(1068, 449);
             tabPagePayModeDetail.TabIndex = 1;
+            tabPagePayModeDetail.Text = "Pay Mode Detail";
             tabPagePayModeDetail.UseVisualStyleBackColor = true;
             // 
             // label2
